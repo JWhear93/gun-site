@@ -1,0 +1,158 @@
+html {
+	background-color: #2a2a2a;
+}
+
+.container {
+	background-color: rgb(224, 224, 224);
+	min-width: 390px;
+	background-image: url(../images/carbon-fibre.png);
+	border-left: 1px solid #00c1ff;
+	border-right: 1px solid #00c1ff;
+}
+
+#top-main {
+	
+}
+
+#top-title {
+	max-width: 931px;
+	margin: 0 auto;
+}
+
+#main-title {
+	font-family: 'IM Fell Great Primer', serif;
+	color: #94e5ff;
+	text-shadow: 2px 1px 4px black;
+	display: inline-block;
+	padding: 0 30px;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.gunl, .gunr {
+	display: inline-block;
+	top: 15px;
+	position: relative;
+	display: none;
+}
+
+.m16l, .m16r {
+	display: inline-block;
+	top: 15px;
+	position: relative;
+	display: none;
+}
+
+.gunl {
+	padding-left: 10px;
+}
+
+.gunr {
+	padding-right: 10px;
+}
+
+.gun-type {
+	text-align: center;
+	cursor: pointer;
+	font-size: 19px;
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+.gun-type:hover {
+	background: black;
+	color: #94e5ff;
+}
+
+#top-nav {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+/* ^ end of top section ^ */
+/* gun section */
+.gun-row {
+	padding: 30px 60px;
+}
+
+.gun-section {
+	width: 200px;
+	min-width: 200px;
+	height: 200px;
+	min-height: 200px;
+	border: 1px solid black;
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 4px;
+}
+
+.gun-pic {
+	display: ;
+	background: url(../images/axiom-pattern.png);
+	background-color: whitesmoke;
+	height: 178px;
+	max-height: 178px;
+}
+
+.gun-desc {
+	height: 20px;
+	background: white;
+	text-align: center;
+	padding-bottom: 2px;
+}
+
+.gun {
+	width: 180px;
+	margin: 30% 10px;
+}
+
+/* ^ end of gun section ^ */
+/* Footer */
+
+#footer {
+	width:100%;
+	display: block;
+	position: absolute;
+	margin: 0;
+	background: #2a2a2a;
+	border-top: 1px solid #00c1ff;
+}
+
+#foot-info {
+	width: 70%;
+	padding-top: 25px;
+	margin: 0 auto;
+}
+
+.foot-text {
+	color: #00c1ff;
+	cursor: default;
+}
+
+/* center title when small */
+@media (min-width: 400px) {
+	#top-title {
+		max-width: 347px;
+	}
+}
+
+/* header pistols */
+@media (min-width: 664px) {
+	.gunl, .gunr {
+		display: initial;
+	}
+	#top-title {
+		max-width: 517px;
+	}
+}
+
+/* header m16's */
+@media (min-width: 1197px) {
+	#top-title {
+		max-width: 960px;
+		padding-left: 14.5px;
+	}
+	.m16l, .m16r {
+		display: initial;
+	}
+}
