@@ -1,17 +1,21 @@
 html {
 	background-color: #2a2a2a;
+	background-image: url(../images/bulletpile.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 .container {
 	background-color: rgb(224, 224, 224);
-	min-width: 390px;
+	min-width: 290px;
 	background-image: url(../images/carbon-fibre.png);
 	border-left: 1px solid #00c1ff;
 	border-right: 1px solid #00c1ff;
+	max-width: 1200px;
 }
 
 #top-main {
-	
+	background: url(../images/carbon-fibre.png);
 }
 
 #top-title {
@@ -21,34 +25,14 @@ html {
 
 #main-title {
 	font-family: 'IM Fell Great Primer', serif;
-	color: #94e5ff;
+	color: #00c1ff;
 	text-shadow: 2px 1px 4px black;
 	display: inline-block;
-	padding: 0 30px;
-	font-size: 36px;
 	cursor: pointer;
-}
-
-.gunl, .gunr {
-	display: inline-block;
-	top: 15px;
-	position: relative;
-	display: none;
-}
-
-.m16l, .m16r {
-	display: inline-block;
-	top: 15px;
-	position: relative;
-	display: none;
-}
-
-.gunl {
-	padding-left: 10px;
-}
-
-.gunr {
-	padding-right: 10px;
+	margin: 10px auto;
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
 }
 
 .gun-type {
@@ -63,16 +47,20 @@ html {
 .gun-type:hover {
 	background: black;
 	color: #94e5ff;
+	border-left: 1px solid #00c1ff;
+	border-right: 1px solid #00c1ff;
 }
 
 #top-nav {
 	background: rgba(255, 255, 255, 0.6);
+	border-top: 1px solid #00c1ff;
+	border-bottom: 1px solid #00c1ff;
 }
 
 /* ^ end of top section ^ */
 /* gun section */
 .gun-row {
-	padding: 30px 60px;
+	padding: 30px 6.26%;
 }
 
 .gun-section {
@@ -88,15 +76,16 @@ html {
 
 .gun-pic {
 	display: ;
-	background: url(../images/axiom-pattern.png);
-	background-color: whitesmoke;
+	background: url(../images/brushed-alum.png);
+	background-color: grey;
 	height: 178px;
 	max-height: 178px;
 }
 
 .gun-desc {
 	height: 20px;
-	background: white;
+	background: grey;
+	color: #00c1ff;
 	text-align: center;
 	padding-bottom: 2px;
 }
@@ -138,9 +127,6 @@ html {
 
 /* header pistols */
 @media (min-width: 664px) {
-	.gunl, .gunr {
-		display: initial;
-	}
 	#top-title {
 		max-width: 517px;
 	}
@@ -148,11 +134,5 @@ html {
 
 /* header m16's */
 @media (min-width: 1197px) {
-	#top-title {
-		max-width: 960px;
-		padding-left: 14.5px;
-	}
-	.m16l, .m16r {
-		display: initial;
-	}
+	
 }
