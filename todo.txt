@@ -1,0 +1,3 @@
+try and make top nav scroll to fix 
+
+tooltips that bring image in same position with info panel alongside
